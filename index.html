@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Suraj Ajay Dwivedi Nagarro Assignment 3</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="addtask">
-        <input type="text" placeholder="Add task" />
-        <button>ADD</button>
-      </div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo Lister</title>
 
-      <ol class="incomplete">
-        <h3>incomplete</h3>
-      </ol>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body >
+	
 
-      <ol class="completed">
-        <h3>completed</h3>
-      </ol>
-    </div>
+	<header>
+		<h1>📝 Todo Lister</h1>
+		<!-- <h3></h3> -->
+		<p class="slogan">
+			Finally, get your life and job organised.
+			The world’s #1 task manager and to-do list website.		
+		</p>	
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="➕ Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
 
-    
+			<div id="tasks">
 
-    <script src="javascipt.js"></script>
-  </body>
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
 </html>
